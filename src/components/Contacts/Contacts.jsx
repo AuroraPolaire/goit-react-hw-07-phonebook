@@ -19,10 +19,6 @@ export const Contacts = () => {
     dispatch(deleteContacts(id));
   };
 
-  // const editContact = id => {
-  //   dispatch(editContacts(id));
-  // };
-
   return (
     <Table>
       <tbody>
@@ -34,9 +30,6 @@ export const Contacts = () => {
                 <td>{phone}</td>
                 <td>
                   <button onClick={() => deleteContact(id)}>Delete</button>
-                </td>
-                <td>
-                  {/* <button onClick={() => editContact(id)}>Edit</button> */}
                 </td>
               </tr>
             );
